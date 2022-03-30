@@ -3,18 +3,29 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 px-1 bg-light position-fixed" id="sticky-sidebar">
-            <div class="nav flex-column">
-                <a href="#_" class="nav-link">Link</a>
-                <a href="#_" class="nav-link">Link</a>
-                <a href="#_" class="nav-link">Link</a>
-                <a href="#_" class="nav-link">Link</a>
-                <a href="#_" class="nav-link">Link</a>
+        <nav class="col-lg-2 col-xl-1 d-md-block sidebar collapse" id="sidebarMenu" style="background-color:#EDEDED;">
+            <div class="position-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="ps-0 nav-link active" aria-current="true">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="ps-0 nav-link active">Linear model</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="ps-0 nav-link active">Logistic model</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="ps-0 nav-link active">GEE model</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="ps-0 nav-link active">Path model</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="col-md-2 offset-3" id="main">
+        </nav>
+        <div class="col" id="main">
             <h1>Main Area</h1>
-            ...
         </div>
     </div>
 </div>
